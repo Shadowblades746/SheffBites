@@ -1,0 +1,102 @@
+/* Author: Emad Riyaz Ahamed */
+
+/* ~~~~~~~~~~ containers ~~~~~~~~~~ */
+#legal-and-security-page {
+    /* centres content and limits width to 90% */
+    width: auto;
+    max-width: 90%;
+    background-color: white;
+    color: #333333;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact-us {
+    margin-top: -0.9rem;
+}
+
+#references-container {
+    /* ensures this is met */
+    padding-bottom: 0 !important;
+}
+
+#main-container {
+    /* centres content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#references {
+    margin-top: -0.6rem;
+}
+
+#references ul {
+    padding-bottom: 0;
+}
+
+li {
+    padding-bottom: 0.2rem;
+}
+/* ~~~~~~~~~~ containers ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ content ~~~~~~~~~~ */
+#legal-and-security-page ul, #legal-and-security-page p {
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.heading {
+    list-style-type: none;
+}
+
+.list {
+    margin-left: 1rem;
+}
+
+#measures-to-ensure-security {
+    padding-top: 0.5rem;
+}
+
+#main-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+    font-size: 1rem;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-bottom: 0.2rem;
+}
+
+#privacy-policy p, #references ul {
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+}
+/* ~~~~~~~~~~ content ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */
+@media screen and (min-width: 600px) {
+    #legal-and-security-page {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */

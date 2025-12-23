@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility</title>
+    <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./CSS/normalize.css"> <!-- https://csstools.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="CSS/accessibility.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emad Riyaz Ahamed">
+<body>
+<div id="wrapper">
+    <header>
+        <div id="header-container">
+            <p id="logo">SheffBites</p>
+            <nav id="header-nav" aria-label="main navigation">
+                <ul id="header-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food&drink.html">Food & Drink</a></li>
+                    <li><a href="picnic.html">Picnic Areas</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <div id="hamburger" onclick="toggleMenu()">☰</div> <!-- a javascript event -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-container">
+            <div id="accessibility-page">
+                <h1>Accessibility Statement</h1>
+                <h2 id="measures-to-support-accessibility">Measures to Support Accessibility</h2>
+                <h3>I tested my website using tools such as</h3>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/windows/tips/narrator">Narrator | Microsoft Windows</a></li>
+                    <li><a href="https://webaim.org/standards/wcag/checklist">WebAIM: WebAIM's WCAG 2 Checklist</a></li>
+                    <li><a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tools</a></li>
+                    <li><a href="https://validator.w3.org/detailed.html">The W3C Markup Validation Service</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/">The W3C CSS Validation Service</a></li>
+                </ul>
+                <h3>I have included features such as</h3>
+                <ul>
+                    <li>alternative text: ensures that if images do not load then there is descriptive text that describes each image.</li>
+                    <li>figures: semantic elements that ensure screen readers know where each figure is on the page.</li>
+                    <li>figure captions: help screen readers and anyone to check what an image is with embedded links to the source image.</li>
+                    <li>form labels:  help screen readers correctly read the form.</li>
+                    <li>language: help screen readers correctly identify the language of the page to read content appropriately.</li>
+                </ul>
+                <h3>I have included structural semantic elements which help with navigation for screen readers such as</h3>
+                <ul>
+                    <li>headings</li>
+                    <li>unordered lists</li>
+                    <li>navigation</li>
+                    <li>header </li>
+                    <li>main</li>
+                    <li>footer</li>
+                </ul>
+                <h3>I have included ARIA elements which help with screen readers when HTML semantic elements are not descriptive enough such as:</h3>
+                <ul>
+                    <li>ARIA labels</li>
+                </ul>
+                <h2 id="status-of-compliance">Status of Compliance</h2>
+                <p>My website is partially compliant with WCAG 2.1 Level AA and fully compliant with CSS level 3 + SVG.</p>
+                <h2 id="assistive-technologies-supported">Assistive technologies supported</h2>
+                <p id="assistive-paragraph">I have tested my website with screen readers such as the Windows narrator, as well as keyboard-only navigation, to ensure accessibility for all users.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <nav id="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="legal&security.html">Legal & Security</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="testing.html">Testing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="copyright">&copy; Emad Riyaz Ahamed, 2024</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

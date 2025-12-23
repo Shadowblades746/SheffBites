@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design</title>
+    <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./CSS/normalize.css"> <!-- https://csstools.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="CSS/design.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emad Riyaz Ahamed">
+<body>
+<div id="wrapper">
+    <header>
+        <div id="header-container">
+            <p id="logo">SheffBites</p>
+            <nav id="header-nav" aria-label="main navigation">
+                <ul id="header-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food&drink.html">Food & Drink</a></li>
+                    <li><a href="picnic.html">Picnic Areas</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <div id="hamburger" onclick="toggleMenu()">☰</div> <!-- a javascript event -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-container">
+            <div id="design-page">
+                <h1>Design</h1>
+                <h2 id="introduction">Introduction</h2>
+                <ul>
+                    <li>When initially designing my website, I decided to research colour schemes.</li>
+                    <li>My aim was to create a website that looked inviting and friendly while being practical and this meant that my colour scheme had to be bright while also being professional.</li>
+                    <li>I wanted to ensure that the reader could efficiently take in the information of my website in an engaging and appealing way which determined the way I laid out each of my elements.</li>
+                </ul>
+                <h2>Site map</h2>
+                <figure>
+                    <img src="./Images/design%20sitemap.png" alt="sitemap" id="sitemap">
+                    <figcaption>Sitemap</figcaption>
+                </figure>
+                <h2>Design mock ups</h2>
+                <ul>
+                    <li>I used the website <a href="https://piktochart.com/tips/what-color-is-wheat#:~:text=Wheat%20and%20Teal%20(%23f5deb3,for%20modern%20and%20sophisticated%20designs">Colour Scheme</a> and decided to go with "wheat" as my main background with "teal" and "coral" as my header and footer background respectively.</li>
+                    <li>By using complementary colours, there was high contrast, in combination with a flowy design which helps keep the reader engaged in the website.</li>
+                    <li>I ensured every image was rounded and had a shadow to make it pop, and each footer menu conformed to the same style to keep consistency.</li>
+                    <li>I used "hr" elements to separate sections of each webpage to make it easier to read and distinguish between separate areas.</li>
+                    <li>I used flexbox to make images stack vertically on mobile and horizontally on desktop.</li>
+                    <li>I styled each link in bold and added a hover effect to ensure they were clear while not being jarring.</li>
+                    <li>I appropriately used text decoration, font weighting and font size to highlight each element.</li>
+                    <li>I appropriately used element backgrounds for certain elements to differentiate them from the background and encapsulate the child elements.</li>
+                    <li>I made use of semantic elements to style my website appropriately.</li>
+                    <li>I made use of transitions and effects such colour change and element resizing to make my website more engaging.</li>
+                    <li>I made use of a CSS normalize template to ensure that my designs looked the same no matter what web browser was used.</li>
+                    <li>I made use of scaling elements such as "rem"  to ensure my website scaled correctly.</li>
+                    <li>The following are images of each webpage.</li>
+                    <li>Note: some webpages have been omitted due to similarity.</li>
+                </ul>
+                <div>
+                    <figure>
+                        <img src="./Images/design%20accessibility%20desktop.png" alt="accessibility desktop">
+                        <figcaption>Accessibility Desktop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20accessibility%20mobile.png" alt="accessibility mobile">
+                            <figcaption>Accessibility Mobile</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20contact%20desktop.png" alt="contact desktop">
+                        <figcaption>Contact Desktop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20contact%20mobile.png" alt="contact mobile">
+                        <figcaption>Contact Mobile</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20food%20desktop.png" alt="food desktop">
+                        <figcaption>Food Desktop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20food%20mobile.png" alt="food mobile">
+                            <figcaption>Food Mobile</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20home%20desktop.png" alt="home desktop">
+                        <figcaption>Home Desktop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20home%20mobile.png" alt="home mobile">
+                            <figcaption>Home Mobile</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20quiz%20desktop.png" alt="quiz desktop">
+                        <figcaption>Quiz Desktop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20quiz%20mobile.png" alt="quiz mobile">
+                        <figcaption>Quiz Mobile</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20testing%20desktop.png" alt="testing desktop">
+                        <figcaption>Testing Desktop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/design%20testing%20mobile.png" alt="testing mobile">
+                        <figcaption>Testing Mobile</figcaption>
+                    </figure>
+                </div>
+                <h2>Breakpoint</h2>
+                <ul>
+                    <li>I made use of a single breakpoint at 600px as it was much larger than the average mobile display size as shown by <a href="https://gs.statcounter.com/screen-resolution-stats/mobile/worldwide">Mobile display sizes</a> so that no mobile would ever have a desktop display.</li>
+                    <li>This kept my website mobile first since my breakpoint used a minimum pixel size rather than maximum.</li>
+                </ul>
+                <h2>Menu system</h2>
+                <ul>
+                    <li>I used my own menu system.</li>
+                    <li>I added a header bar with a logo in the left and links in text form aligned to the right.</li>
+                    <li>I added a footer bar with a copyright statement in the right and links in text form aligned to the left.</li>
+                    <li>On a mobile display. the header links become a hamburger menu which displays a vertical list of links when tapped on, and when the user taps outside the hit-box, the links collapse into the hamburger.</li>
+                    <li>On a mobile display, the horizontal footer morphs into a vertical footer with vertical links and the copyright statement at the bottom.</li>
+                </ul>
+
+                <h2>Browser testing</h2>
+                <ul id="browser-testing">
+                    <li>I have tested my website on both a chromium and quantum based browser using both a desktop and mobile view, to ensure that it runs perfectly no matter how the user views it.</li>
+                    <li>I have not shown every single page as it would be redundant, but as seen in the screenshots, both browser engines display the website as intended with no side effects.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <nav id="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="legal&security.html">Legal & Security</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="testing.html">Testing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="copyright">&copy; Emad Riyaz Ahamed, 2024</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

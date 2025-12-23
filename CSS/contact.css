@@ -1,0 +1,106 @@
+/* Author: Emad Riyaz Ahamed */
+
+/* ~~~~~~~~~~ containers ~~~~~~~~~~ */
+#contact-page {
+    /* centres content and limits width to 90% but maximises width*/
+    width: 100%;
+    max-width: 90%;
+    background-color: white;
+    color: #333333;
+    padding: 1rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main-container {
+    /* centres content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+#email, textarea {
+    /* adds internal padding and adds a rounded border */
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+
+#checkbox {
+    padding-bottom: 0.5rem;
+}
+
+button {
+    /* styles the button and makes the cursor a pointer and a transition */
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+    background-color:slateblue;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: mediumslateblue;
+}
+/* ~~~~~~~~~~ containers ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ text ~~~~~~~~~~ */
+#main-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+label {
+    padding-top: 0;
+    display: block;
+    font-weight: bold;
+}
+/* ~~~~~~~~~~ text ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */
+@media screen and (min-width: 600px) {
+    strong{
+        display: inline;
+        font-size: 2rem;
+    }
+}
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */

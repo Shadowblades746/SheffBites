@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./CSS/normalize.css"> <!-- https://csstools.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="CSS/quiz.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emad Riyaz Ahamed">
+<body>
+<div id="wrapper">
+    <header>
+        <div id="header-container">
+            <p id="logo">SheffBites</p>
+            <nav id="header-nav" aria-label="main navigation">
+                <ul id="header-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food&drink.html">Food & Drink</a></li>
+                    <li><a href="picnic.html">Picnic Areas</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <div id="hamburger" onclick="toggleMenu()">☰</div> <!-- a javascript event -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-container">
+            <h1>Quiz</h1>
+            <div>
+                <p>
+                    Heyy, this is a fun quiz for you to have a go at if you’re feeling a bit bored and want to test out
+                    your knowledge of famous figures both real and fictional. Go try answering some of the questions I made
+                    by hovering over the question box and checking your answer by hovering over the answer button.
+                </p>
+            </div>
+            <div>
+                <div class="quiz-container">
+                    <figure>
+                        <img src="Images/quiz%20nike.jpg" alt="statue">
+                        <figcaption><a href="https://s0.geograph.org.uk/geophotos/02/89/15/2891534_5c8f5634.jpg">Statue</a> by <a href="https://www.geograph.org.uk/profile/43729">David Dixon</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></figcaption>
+                    </figure>
+                    <div class="quiz">
+                        <h2>What famous Goddess from Greek mythology is this statue in Weston park depicting?</h2>
+                        <div class="check-answer">
+                            <button>Check Answer</button>  <!-- a button that highlights the correct answer -->
+                        </div>
+                        <div class="options"> <!-- radio buttons where only one can be selected -->
+                            <label class="option correct"> <!-- correct answer has extra class -->
+                                <input type="radio" name="answer" value="Nike - Goddess of victory">
+                                Nike - Goddess of victory
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="answer" value="Athena - Goddess of wisdom">
+                                Athena - Goddess of wisdom
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="answer" value="Zeus - God of thunder">
+                                Zeus - God of thunder
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="answer" value="Artemis - Goddess of the hunt">
+                                Artemis - Goddess of the hunt
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="quiz-container">
+                    <figure>
+                        <img src="Images/quiz%20victoria.jpg" alt="statue">
+                        <figcaption><a href="https://www.flickr.com/photos/30120216@N07/5548564714">Statue</a> by <a href="https://www.flickr.com/photos/30120216@N07/">Budby</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
+                    </figure>
+                    <div class="quiz">
+                        <h2>What famous British monarch is this statue in Endcliffe park depicting?</h2>
+                        <div class="check-answer">
+                            <button>Check Answer</button> <!-- a button that highlights the correct answer -->
+                        </div>
+                        <div class="options"> <!-- radio buttons where only one can be selected -->
+                            <label class="option">
+                                <input type="radio" name="answer" value="Queen Elizabeth I">
+                                Queen Elizabeth
+                            </label>
+                            <label class="option correct"> <!-- correct answer has extra class -->
+                                <input type="radio" name="answer" value="Queen Victoria">
+                                Queen Victoria
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="answer" value="King Henry VIII">
+                                King Henry VIII
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="answer" value="Mary I">
+                                Mary I
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="quiz-container">
+                    <figure>
+                        <img src="Images/quiz%20pan.jpg" alt="statue">
+                        <figcaption><a href="https://s0.geograph.org.uk/geophotos/03/95/66/3956665_fee2d7dc_original.jpg">Statue</a> by <a href="https://www.geograph.org.uk/profile/8664">Graham Robson</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></figcaption>
+                    </figure>
+                    <div class="quiz">
+                        <h2>What famous God from Greek mythology is this statue in The Botanical gardens depicting?</h2>
+                        <div class="check-answer">
+                            <button>Check Answer</button> <!-- a button that highlights the correct answer -->
+                        </div>
+                        <div class="options"> <!-- radio buttons where only one can be selected -->
+                            <label class="option">
+                                <input type="radio" name="answer" value="Hephaestus - God of blacksmithing">
+                                Hephaestus - God of blacksmithing
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="answer" value="Hera - Goddess of marriage ">
+                                Hera - Goddess of marriage
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="answer" value="Apollo - God of the sun">
+                                Apollo - God of the sun
+                            </label>
+                            <label class="option correct"> <!-- correct answer has extra class -->
+                                <input type="radio" name="answer" value="pan - God of the wild">
+                                pan - God of the wild
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <nav id="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="legal&security.html">Legal & Security</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="testing.html">Testing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="copyright">&copy; Emad Riyaz Ahamed, 2024</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

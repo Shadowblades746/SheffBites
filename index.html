@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./CSS/normalize.css"> <!-- https://csstools.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emad Riyaz Ahamed">
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="header-container">
+                <p id="logo">SheffBites</p>
+                <nav id="header-nav" aria-label="main navigation">
+                    <ul id="header-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="food&drink.html">Food & Drink</a></li>
+                        <li><a href="picnic.html">Picnic Areas</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                    <div id="hamburger" onclick="toggleMenu()">☰</div> <!-- a javascript event -->
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="main-container">
+                <div id="main-text">
+                    <p id="welcome">
+                        <strong>Welcome</strong>to SheffBites – your ultimate guide to the best food and drink spots  <!-- strong element for emphasis -->
+                        around the University of Sheffield!
+                        Whether you’re a new student, a returning one, or just visiting,
+                        my site has everything you need to find great eats on campus and nearby picnic-perfect spots to enjoy them.
+                    </p>
+                    <p id="second">
+                        Check out my personal recommendations and insights, explore with my interactive quiz,
+                        and get to know the must-visit places where Sheffield serves up something special.
+                        Dive in and discover your next favorite spot!
+                    </p>
+                </div>
+                <div>
+                    <figure id="side-image">
+                        <img src="Images/index%20Diamond.jpg" alt="The diamond, university of sheffield">
+                        <figcaption><a href="https://www.flickr.com/photos/robbophotos/16881917404">The Diamond, University of Sheffield</a> by <a href="https://www.flickr.com/photos/robbophotos/">John Robinson</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div>
+                <p id="context">
+                    “Hi there! I’m Emad, a student here at the University of Sheffield.
+                    I created SheffBites to help you with food around campus,
+                    whether you’re a fellow student or visiting for the first time.
+                    My goal is to give you honest reviews and hidden gems,
+                    based on my own experiences and research.”
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <div id="footer-container">
+                <nav id="footer-nav" aria-label="footer navigation">
+                    <ul>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="legal&security.html">Legal & Security</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="testing.html">Testing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <p id="copyright">&copy; Emad Riyaz Ahamed, 2024</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

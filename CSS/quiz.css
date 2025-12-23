@@ -1,0 +1,149 @@
+/* Author: Emad Riyaz Ahamed */
+
+/* ~~~~~~~~~~ content ~~~~~~~~~~ */
+.quiz-container {
+    /* puts elements in a column */
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+hr {
+    /* ensures that hr is only a solid block line and auto centred */
+    border: none;
+    border-top: 10px solid #333333;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    padding-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+/* ~~~~~~~~~~ content ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ figure ~~~~~~~~~~ */
+figure {
+    font-size: 0.75rem;
+    margin: 1rem;
+}
+
+
+img {
+    /* styles the image and limits width and makes responsive */
+    width: 100%;
+    height: auto;
+    max-width: 750px;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* ~~~~~~~~~~ figure ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ quiz ~~~~~~~~~~ */
+.quiz {
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: normal;
+    transition: all 0.5s ease-in-out;
+}
+
+.options {
+    /* ensures each of the options are in a column and adds a transition */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.25rem;
+    font-size: 1.1rem;
+    overflow: hidden;
+    transform: translateX(150%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.option {
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    /* adds a transition */
+    transform: scale(1.05);
+}
+
+.quiz:hover .options {
+    /* adds a transition */
+    transform: translateX(0);
+}
+
+.check-answer:hover + .options  .correct {
+    background-color: lightgreen;
+}
+
+.check-answer button {
+    /* makes the cursor a pointer */
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    background-color: seagreen;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.check-answer button:hover {
+    background-color: mediumseagreen;
+}
+/* ~~~~~~~~~~ quiz ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */
+@media screen and (min-width: 600px) {
+    .quiz-container {
+        flex-direction: row;
+    }
+
+    h2 {
+       font-size: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .options {
+        font-size: 1.4rem;
+    }
+
+    .check-answer button {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    figure {
+        font-size: 0.75rem;
+        margin: 1.5rem;
+    }
+}
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */

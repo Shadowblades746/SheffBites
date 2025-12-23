@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+    <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./CSS/normalize.css"> <!-- https://csstools.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="CSS/testing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emad Riyaz Ahamed">
+<body>
+<div id="wrapper">
+    <header>
+        <div id="header-container">
+            <p id="logo">SheffBites</p>
+            <nav id="header-nav" aria-label="main navigation">
+                <ul id="header-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food&drink.html">Food & Drink</a></li>
+                    <li><a href="picnic.html">Picnic Areas</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <div id="hamburger" onclick="toggleMenu()">☰</div> <!-- a javascript event -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-container">
+            <div id="testing-page">
+                <h1>Testing</h1>
+                <h2 id="Optimisation">Optimisation</h2>
+                <ul>
+                    <li>I have ensured to use as few images as possible so that the loading times are minimal.</li>
+                    <li>There are a few images that take some time to load due to the large pixel density, however, I have sacrificed loading times for a higher quality image in these cases, as I feel this is more important to the quality of the website.</li>
+                    <li>I have not embedded anything apart from images which are stored locally, which speeds up loading time significantly.</li>
+                    <li>Any external links are succinct and descriptive.</li>
+                </ul>
+                <h2>Debugging</h2>
+                <ul>
+                    <li>I have made use of the official CSS and HTML validators by w3, which have been linked in my legal and security page.</li>
+                    <li>I tested every single HTML file and while, there were initially issues with there being unnecessary ARIA elements, I got rid of them and this fixed those errors leaving me with each HTML file having no errors or warnings.</li>
+                    <li>I also tested every single CSS file and had no errors or warnings and each file was compliant with the CSS level 3 + SVG standard which can also be seen in my legal and security page.</li>
+                </ul>
+                <div>
+                    <figure>
+                        <img src="./Images/testing%20HTML%20validator.png" alt="HTML validator">
+                        <figcaption>HTML validator result</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/testing%20CSS%20validator.png" alt="CSS validator">
+                        <figcaption>CSS validator result</figcaption>
+                    </figure>
+                </div>
+                <h2>Browser testing</h2>
+                <ul>
+                    <li>I have tested my website on both a chromium and quantum based browser using both a desktop and mobile view, to ensure that it runs perfectly no matter how the user views it.</li>
+                    <li>I have not shown every single page as it would be redundant, but as seen in the screenshots, both browser engines display the website as intended with no side effects.</li>
+                </ul>
+                <div id="mobile-images">
+                    <figure>
+                        <img src="./Images/testing%20firefox%20mobile.png" alt="firefox mobile">
+                        <figcaption>Firefox mobile result</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/testing%20edge%20mobile.png" alt="edge mobile">
+                        <figcaption>Edge mobile result</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./Images/testing%20firefox%20desktop.png" alt="firefox desktop">
+                        <figcaption>Firefox desktop result</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/testing%20edge%20desktop.png" alt="edge desktop">
+                        <figcaption>Edge desktop result</figcaption>
+                    </figure>
+                </div>
+                <h2>Accessibility</h2>
+                <ul>
+                    <li>To ensure that My website is accessible, I have used the WAVE web extension to test each webpage on my website.</li>
+                    <li>This can be seen in more detail in my accessibility section, but as you can see by the images, there are no Errors and only a couple of warnings which are due to elements which do not have much effect on accessibility.</li>
+                    <li>These warnings are mainly due to redundant links which are due to references, or elements that appear to look like headings such as my logo, or image alt text where in the quiz, the alt text had to be ambiguous.</li>
+                    <li>Overall, as seen in the evaluation of my website, it complies with the WCAG level AA standard which ensures that my website is accessible.</li>
+                </ul>
+                <div>
+                    <figure>
+                        <img src="./Images/testing%20wave%20contact.png" alt="contact">
+                        <figcaption>WAVE Contact page top</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/testing%20wave%20contact%20(2).png" alt="contact">
+                        <figcaption>WAVE Contact page bottom</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/testing%20wave%20home.png" alt="home">
+                        <figcaption>WAVE Home page</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/testing%20wave%20food.png" alt="food">
+                        <figcaption>WAVE Food page</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./Images/testing%20wave%20quiz.png" alt="quiz">
+                        <figcaption>WAVE Quiz page</figcaption>
+                    </figure>
+                    <figure id="wave-accessibility">
+                        <img src="./Images/testing%20wave%20accessibility.png" alt="accessibility">
+                        <figcaption>WAVE Accessibility page</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <nav id="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="legal&security.html">Legal & Security</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="testing.html">Testing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="copyright">&copy; Emad Riyaz Ahamed, 2024</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

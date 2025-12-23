@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="./CSS/normalize.css"> <!-- https://csstools.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Emad Riyaz Ahamed">
+<body>
+<div id="wrapper">
+    <header>
+        <div id="header-container">
+            <p id="logo">SheffBites</p>
+            <nav id="header-nav" aria-label="main navigation">
+                <ul id="header-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food&drink.html">Food & Drink</a></li>
+                    <li><a href="picnic.html">Picnic Areas</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <div id="hamburger" onclick="toggleMenu()">☰</div> <!-- a javascript event -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-container">
+            <div id="contact-page">
+                <h1>Contact Me</h1>
+
+                <div id="contact-details">
+                    <h2>Contact Information</h2>
+                    <p><strong>Email: </strong> <a href="mailto:your.email@example.com">cs@sheffield.ac.uk</a></p> <!-- strong element for emphasis and an email link -->
+                    <p><strong>Address: </strong>Regent Court, The University of, 211 Portobello St, Sheffield S1 4DP</p>
+                </div>
+
+                <div id="contact-form">
+                    <h2>Send a Message</h2>
+                    <form action="mailto:eriyazahamed1@sheffield.ac.uk?subject=Comments" enctype="text/plain" method="post"> <!-- email link that will open up email client when submitted -->
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required> <!-- email input with a placeholder -->
+                        <label for="comments">Your Comments:</label>
+                        <textarea id="comments" name="comments" placeholder="Enter your comments" rows="5" required></textarea> <!-- 5 row textbox -->
+                        <label id="checkbox">
+                            <input type="checkbox" name="privacy-policy" required> <!-- checkbox -->
+                            I agree to the <a href="legal&security.html">privacy policy.</a>
+                        </label>
+                        <button type="submit">Send Message</button> <!-- submit button only works if each required element has been filled -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <nav id="footer-nav" aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="legal&security.html">Legal & Security</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="testing.html">Testing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="copyright">&copy; Emad Riyaz Ahamed, 2024</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* Author: Emad Riyaz Ahamed */
+
+/* ~~~~~~~~~~ content ~~~~~~~~~~ */
+#context {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#main-text {
+    font-size: 1.1rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+figure {
+    font-size: 0.75rem;
+    margin: 0.5rem;
+}
+
+img {
+    /* styles the image and limits width and makes responsive */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main-container {
+    /* makes elements in the main container responsive */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+/* ~~~~~~~~~~ content ~~~~~~~~~~ */
+
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */
+@media screen and (min-width: 600px) {
+    #context {
+        font-size: 1rem;
+    }
+
+    #wrapper {
+        height:100vh
+    }
+
+    #main-container {
+        flex-direction: row;
+    }
+
+    #main-text {
+        width: 75%;
+        font-size: 1.3rem;
+    }
+
+    figure {
+        font-size: 0.75rem;
+        margin: 1rem;
+    }
+}
+/* ~~~~~~~~~~ media ~~~~~~~~~~ */
