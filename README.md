@@ -25,5 +25,5 @@ open index.html
 ```
 
 ## Live Demo
-You can try the project here:
-shadowblades746.github.io/SheffBites
+**You can try the project here**: [Website](https://shadowblades746.github.io/SheffBites)
+
